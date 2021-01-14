@@ -1,5 +1,10 @@
 const Discord = require('discord.js');
 
+const exampleEmbed = new Discord.MessageEmbed()
+	.setColor('#0099ff')
+	.setDescription('Koksiu pięć gram.')
+	.setThumbnail('https://media.tenor.com/images/84673ffc00bbca616c006c39d1bf7e49/tenor.gif')
+
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -23,6 +28,16 @@ client.on('message', message => {
     if (message.content === 'Jestem menelem.') {
 
        message.reply('Gratulacje.');
+
+       }
+
+});
+
+client.on('message', message => {
+
+    if (message.content === 'Tylko jedno w głowie mam.') {
+
+       channel.send(exampleEmbed);
 
        }
 
