@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const exampleEmbed = new Discord.MessageEmbed()
+const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setDescription('Koksiu pięć gram.')
 	.setThumbnail('https://media.tenor.com/images/84673ffc00bbca616c006c39d1bf7e49/tenor.gif')
