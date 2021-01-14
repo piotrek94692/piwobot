@@ -37,7 +37,7 @@ client.on('message', message => {
 
     if (message.content === 'Tylko jedno w głowie mam.') {
 
-       channel.send(exampleEmbed);
+       message.channel.send(exampleEmbed);
 
        }
 
