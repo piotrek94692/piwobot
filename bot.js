@@ -18,4 +18,14 @@ client.on('message', message => {
 
 });
 
+client.on('message', message => {
+
+    if (message.content === 'Jestem menelem.') {
+
+       message.reply('Gratulacje.');
+
+       }
+
+});
+
 client.login(process.env.BOT_TOKEN);
