@@ -15,19 +15,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'Piwo?') {
+    if (message.content.includes(iwo?)) {
 
-       message.reply('Oczywiście.');
-
-       }
-
-});
-
-client.on('message', message => {
-
-    if (message.content === 'Jestem menelem.') {
-
-       message.reply('Gratulacje.');
+       message.reply('oczywiście.');
 
        }
 
@@ -35,7 +25,17 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === 'Tylko jedno w głowie mam.') {
+    if (message.content.includes(estem menelem)) {
+
+       message.reply('gratulacje.');
+
+       }
+
+});
+
+client.on('message', message => {
+
+    if (message.content.includes(ylko jedno w głowie mam)) {
 
        message.channel.send({embed:exampleEmbed});
 
