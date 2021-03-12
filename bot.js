@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content.includes('estem menelem')) {
+    if (message.content.includes('estem menel')) {
 
        message.reply('gratulacje.');
 
@@ -35,7 +35,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content.includes('ylko jedno w głowie mam')) {
+    if (message.content.includes('ylko jedno w głowie ma')) {
 
        message.channel.send({embed:exampleEmbed});
 
